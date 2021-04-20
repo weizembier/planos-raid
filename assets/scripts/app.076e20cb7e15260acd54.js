@@ -2345,7 +2345,11 @@
                             H.layer.add(a), a.moveToBottom(), H.stage.draw();
                             var i = H.layer.toDataURL(),
                                 o = document.createElement("a");
+<<<<<<< HEAD
                             o.download = "vendetta plano.png", o.href = i, document.body.appendChild(o), o.click(), document.body.removeChild(o), a.remove(), H.stage.size(n), H.stage.scale(e), H.stage.draw()
+=======
+                            o.download = "vendetta estrategia.png", o.href = i, document.body.appendChild(o), o.click(), document.body.removeChild(o), a.remove(), H.stage.size(n), H.stage.scale(e), H.stage.draw()
+>>>>>>> gh-pages
                         }
                     }
                 }, {

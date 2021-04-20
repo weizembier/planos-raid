@@ -1,245 +1,263 @@
+<!-- TODOS LOS LABEL SE DEBEN DE BORRAR PARA CUANDO SE VAYA HACER LA MODIFICACION PARA INSERTAR EL GUARDADO -->
+
 <html>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-<meta charset="utf-8">
-<title>Editor de Raid | Vendetta WoW</title>
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="mask-icon" href="https://raidplan.io/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#2b5797">
-<meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="assets/styles/vendor.21e2102276cad6ac6b8b.css">
-<link rel="stylesheet" type="text/css" href="assets/styles/styles.f630c16512306c614cbe.css">
-<script>
+  <meta charset="utf-8">
+  <title>Editor de Raid | Vendetta WoW</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/styles/vendor.21e2102276cad6ac6b8b.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/styles.f630c16512306c614cbe.css">
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-43674430-2');
-    </script>
+  </script>
 </head>
 <body>
-<header>
-<nav id="rpnav" class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container container-big">
-<a class="navbar-brand" href="https://raidplan.io/">RaidPlan<span>.io</span></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navMenu">
-<ul class="navbar-nav mr-auto">
-</ul>
-</div>
-</div>
-</nav>
-</header>
-<div class="container container-big pt-3">
-<div id="strat" class="strat editMode">
-<div class="sidebar">
-<div class="section thin">
-<div class="section-head">Marcas</div>
-<div class="section-body">
-<div class="map-toolbar">
-<div class="tb-inner">
-<div class="tb-section">Marcas de Banda</div>
-<div class="tb-items">
-<img class="item" draggable="true" src="assets/img/icons/mark/star.png" data-asset="star">
-<img class="item" draggable="true" src="assets/img/icons/mark/circle.png" data-asset="circle">
-<img class="item" draggable="true" src="assets/img/icons/mark/diamond.png" data-asset="diamond">
-<img class="item" draggable="true" src="assets/img/icons/mark/triangle.png" data-asset="triangle">
-<img class="item" draggable="true" src="assets/img/icons/mark/moon.png" data-asset="moon">
-<img class="item" draggable="true" src="assets/img/icons/mark/square.png" data-asset="square">
-<img class="item" draggable="true" src="assets/img/icons/mark/cross.png" data-asset="cross">
-<img class="item" draggable="true" src="assets/img/icons/mark/skull.png" data-asset="skull">
-</div>
-<div class="tb-section">Roles</div>
-<div class="tb-items">
-<img class="item role-border" draggable="true" src="assets/img/icons/role/tank.png" data-asset="tank">
-<img class="item role-border" draggable="true" src="assets/img/icons/role/healer.png" data-asset="healer">
-<img class="item role-border" draggable="true" src="assets/img/icons/role/mdps.png" data-asset="mdps">
-<img class="item role-border" draggable="true" src="assets/img/icons/role/rdps.png" data-asset="rdps">
-</div>
-<div class="tb-section">Clases</div>
-<div class="tb-items">
-<img class="item item-border" draggable="true" src="assets/img/icons/class/deathknight.png" style="border-color:#C41F3B" data-asset="deathknight">
-<!--img class="item item-border" draggable="true" src="assets/img/icons/class/demonhunter.png" style="border-color:#A330C9" data-asset="demonhunter"-->
-<img class="item item-border" draggable="true" src="assets/img/icons/class/druid.png" style="border-color:#FF7D0A" data-asset="druid">
-<img class="item item-border" draggable="true" src="assets/img/icons/class/hunter.png" style="border-color:#ABD473" data-asset="hunter">
-<img class="item item-border" draggable="true" src="assets/img/icons/class/mage.png" style="border-color:#40C7EB" data-asset="mage">
-<!--img class="item item-border" draggable="true" src="assets/img/icons/class/monk.png" style="border-color:#00FF96" data-asset="monk"-->
-<img class="item item-border" draggable="true" src="assets/img/icons/class/paladin.png" style="border-color:#F58CBA" data-asset="paladin">
-<img class="item item-border" draggable="true" src="assets/img/icons/class/priest.png" style="border-color:#FFFFFF" data-asset="priest">
-<img class="item item-border" draggable="true" src="assets/img/icons/class/rogue.png" style="border-color:#FFF569" data-asset="rogue">
-<img class="item item-border" draggable="true" src="assets/img/icons/class/shaman.png" style="border-color:#0070DE" data-asset="shaman">
-<img class="item item-border" draggable="true" src="assets/img/icons/class/warlock.png" style="border-color:#8787ED" data-asset="warlock">
-<img class="item item-border" draggable="true" src="assets/img/icons/class/warrior.png" style="border-color:#C79C6E" data-asset="warrior">
+  <header>
+    <nav id="rpnav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container container-big">
+        <a class="navbar-brand" href="https://www.vendettawow.com/"><img src="assets/img/other/logo.png"><span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container container-big pt-3">
+    <div id="strat" class="strat editMode">
+      <div class="sidebar">
+        <div class="section thin">
+          <div class="section-head">Marcas</div>
+          <div class="section-body">
+            <div class="map-toolbar">
+              <div class="tb-inner">
+                <div class="tb-section">Marcas de Banda</div>
+                <div class="tb-items">
+                  <img class="item" draggable="true" src="assets/img/icons/mark/star.png" data-asset="star">
+                  <img class="item" draggable="true" src="assets/img/icons/mark/circle.png" data-asset="circle">
+                  <img class="item" draggable="true" src="assets/img/icons/mark/diamond.png" data-asset="diamond">
+                  <img class="item" draggable="true" src="assets/img/icons/mark/triangle.png" data-asset="triangle">
+                  <img class="item" draggable="true" src="assets/img/icons/mark/moon.png" data-asset="moon">
+                  <img class="item" draggable="true" src="assets/img/icons/mark/square.png" data-asset="square">
+                  <img class="item" draggable="true" src="assets/img/icons/mark/cross.png" data-asset="cross">
+                  <img class="item" draggable="true" src="assets/img/icons/mark/skull.png" data-asset="skull">
+                </div>
+                <div class="tb-section">Roles</div>
+                <div class="tb-items">
+                  <img class="item role-border" draggable="true" src="assets/img/icons/role/tank.png" data-asset="tank">
+                  <img class="item role-border" draggable="true" src="assets/img/icons/role/healer.png" data-asset="healer">
+                  <img class="item role-border" draggable="true" src="assets/img/icons/role/mdps.png" data-asset="mdps">
+                  <img class="item role-border" draggable="true" src="assets/img/icons/role/rdps.png" data-asset="rdps">
+                </div>
+                <div class="tb-section">Clases</div>
+                <div class="tb-items">
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/deathknight.png" style="border-color:#C41F3B" data-asset="deathknight">
+                  <!--img class="item item-border" draggable="true" src="assets/img/icons/class/demonhunter.png" style="border-color:#A330C9" data-asset="demonhunter"-->
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/druid.png" style="border-color:#FF7D0A" data-asset="druid">
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/hunter.png" style="border-color:#ABD473" data-asset="hunter">
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/mage.png" style="border-color:#40C7EB" data-asset="mage">
+                  <!--img class="item item-border" draggable="true" src="assets/img/icons/class/monk.png" style="border-color:#00FF96" data-asset="monk"-->
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/paladin.png" style="border-color:#F58CBA" data-asset="paladin">
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/priest.png" style="border-color:#FFFFFF" data-asset="priest">
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/rogue.png" style="border-color:#FFF569" data-asset="rogue">
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/shaman.png" style="border-color:#0070DE" data-asset="shaman">
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/warlock.png" style="border-color:#8787ED" data-asset="warlock">
+                  <img class="item item-border" draggable="true" src="assets/img/icons/class/warrior.png" style="border-color:#C79C6E" data-asset="warrior">
 
-</div>
-<div class="tb-section">Texto &amp; Formas</div>
-<div class="tb-items">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/square.png" data-shape="square">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/box.png" data-shape="box">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/circle.png" data-shape="circle">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/ring.png" data-shape="ring">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/wedge.png" data-shape="wedge">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/triangle.png" data-shape="triangle">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/arrow.png" data-shape="arrow">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/text.png" data-text="text">
-<img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/emoji.png" data-emoji="emoji">
-</div>
-<div class="tb-section">Otros Recursos</div>
-<div class="tb-items">
+                </div>
+                <div class="tb-section">Texto &amp; Formas</div>
+                <div class="tb-items">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/square.png" data-shape="square">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/box.png" data-shape="box">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/circle.png" data-shape="circle">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/ring.png" data-shape="ring">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/wedge.png" data-shape="wedge">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/triangle.png" data-shape="triangle">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/arrow.png" data-shape="arrow">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/text.png" data-text="text">
+                  <img class="item item-border item-pad" draggable="true" src="assets/img/icons/misc/emoji.png" data-emoji="emoji">
+                </div>
+                <div class="tb-section">Otros Recursos</div>
+                <div class="tb-items">
 <!-- AQUI CARGAMOS LOS RECURSOS PARA LAS RAIDS
       SI SE PONE * VALE PARA TODAS LAS RAIDS  Y/O BOSSES
       HAY QUE PONER EN DATA-ESPECIAL EL NOMBRE DEL BOSS Y BOSS
       DATA-RAID EL NOMBRE DE LA RAID
       DATA-BOSS EL NOMBRE DEL BOSS
       DATA-TIP EL NOMBRE DEL BOSS PARA MOSTRAR AL USUARIO -->
-<img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/gateway.png" data-special="*" data-raid="*" data-boss="*" data-tip="Portal">
-<img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/lath_boss.png" data-special="lath_boss" data-raid="panteon" data-boss="lath" data-tip="Lath">
-<img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/archaedas_boss.png" data-special="archaedas_boss" data-raid="panteon" data-boss="archaedas" data-tip="Archaedas">
-<img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/helya_boss.png" data-special="helya_boss" data-raid="panteon" data-boss="helya" data-tip="Helya">
+      <!--img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/gateway.png" data-special="*" data-raid="*" data-boss="*" data-tip="Portal"-->
+      <img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/lath_boss.png" data-special="lath_boss" data-raid="panteon" data-boss="lath" data-tip="Lath">
+      <img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/archaedas_boss.png" data-special="archaedas_boss" data-raid="panteon" data-boss="archaedas" data-tip="Archaedas">
+      <img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/helya_boss.png" data-special="helya_boss" data-raid="panteon" data-boss="helya" data-tip="Helya">
 
-</div>
-</div>
+    </div>
+  </div>
 </div> </div>
 </div>
 <div class="section thin">
-<div class="section-head">Compartir</div>
-<div class="section-body">
-<div class="sb-card">
-<div class="sb-heading"><i class="fas fa-link"></i> Compartir URL</div>
-<div class="sb-body">
-<div class="input-group">
-<input id="shareURL" type="text" class="form-control" placeholder="¡Guarda tu plano!" value="" readonly>
-<div class="input-group-append">
-<button class="btn btn-secondary" type="button" id="shareCopy">Copiar</button>
-</div>
-</div>
-</div>
-</div>
-<div class="sb-card">
-<div class="sb-heading"><i class="fas fa-edit"></i> Edita URL</div>
-<div class="sb-body">
-<div class="input-group">
-<input id="editURL" type="text" class="form-control" placeholder="¡Guarda tu plano!" value="" readonly>
-<div class="input-group-append">
-<button class="btn btn-secondary" type="button" id="editCopy">Copiar</button>
-</div>
-</div>
-</div>
-</div>
-<div class="strat-actions text-center">
-<button id="btnClone" class="btn btn-secondary btn-block"><i class="fas fa-copy"></i>&nbsp;&nbsp;Clonar mapa</button>
-<button id="btnDownload" class="btn btn-secondary btn-block"><i class="fas fa-download"></i>&nbsp;&nbsp;Descargar Imagen</button>
-</div> </div>
-</div>
-</div>
-<div class="strat-body">
-<div class="topbar ">
-<div class="title">
+
+  <div class="section-head">Compartir</div>
+  <!-- AÑADIR CUANDO SE HAGA PARA PODER GUARDAR - RECORDAR EL DIV SUERTO DE ABAJO -->
+  <div class="section-body">
+    <!--div class="sb-card">
+      <div class="sb-heading"><i class="fas fa-link"></i> Compartir URL</div>
+      <div class="sb-body">
+        <div class="input-group">
+          <input id="shareURL" type="text" class="form-control" placeholder="¡Guarda tu plano!" value="" readonly>
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" id="shareCopy">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div-->
+<label id="shareCopy"></label>
+
+
+    <!--div class="sb-card">
+      <div class="sb-heading"><i class="fas fa-edit"></i> Edita URL</div>
+      <div class="sb-body">
+        <div class="input-group">
+          <input id="editURL" type="text" class="form-control" placeholder="¡Guarda tu plano!" value="" readonly>
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" id="editCopy">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div-->
+<label id="editCopy"></label>
+
+    <div class="strat-actions text-center">
+      <!--button id="btnClone" class="btn btn-secondary btn-block"><i class="fas fa-copy"></i>&nbsp;&nbsp;Clonar mapa</button-->
+      <label id="btnClone"></label>
+
+      <button id="btnDownload" class="btn btn-secondary btn-block"><i class="fas fa-download"></i>&nbsp;&nbsp;Descargar Imagen</button>
+      </div> </div>
+    </div>
+  </div>
+  <div class="strat-body">
+    <div class="topbar ">
+      <div class="title">
 
 <!-- AQUI CARGAMOS LOS BOSSES PARA ELEGIRLOS
       IMG: EL PRIMER BOSS DE LA ULTIMA BANDA/MAZMORRA IMPLEMENTADA
       OPTGROUP: EL NOMBRE DE LA BANDA/MAZMORRA
       OPTION: EL NOMBRE LA BANDA + NOMBRE DEL BOSS Y EL NOMBRE DEL BOSS -->
-<img id="mapImage" src="//assets/img/raid/panteon/icon/lath.png"><select id="mapSelect" class="form-control" data-select="panteon_lath">
-<optgroup label="La Prueba Del Panteon">
-  <option value="panteon_lath">Lath</option>
-  <option value="panteon_archaedas">Archaedas</option>
-  <option value="panteon_helya">Helya</option>
-</optgroup>
+      <img id="mapImage" src="//assets/img/raid/panteon/icon/lath.png"><select id="mapSelect" class="form-control" data-select="panteon_lath">
+        <optgroup label="La Prueba Del Panteon">
+          <option value="panteon_lath">Lath</option>
+          <option value="panteon_archaedas">Archaedas</option>
+          <option value="panteon_helya">Helya</option>
+        </optgroup>
 
-</select><select id="mapType" class="form-control" style="display:none"></select><input id="mapName" class="form-control" type="text" placeholder="Nombre del plano" maxlength="64" value="">
-</div>
-<div class="menu">
-<button id="resetBtn" class="btn btn-secondary">Limpiar</button>
-<button id="saveBtn" class="btn btn-primary disabled">Guardar Cambios</button>
-</div>
-</div>
-<div class="section thin">
-<div class="section-body evenpad">
-<div class="map-container">
-<div id="map" class="map" oncontextmenu="return false"></div>
-<div id="mapStatus" class="map-status">0 Jugadores</div>
-<div id="mapHelper">
-<p><b>Arrastrar Y Colocar</b> marcadores en el mapa</p>
-<p><b>Haz Doble Click</b> en los marcadores para ver más opciones</p>
-<p><b>Haz Click en el Botón Derecho</b> para borrar el marcador</p>
-<p><b>Control Y Click Derecho</b> para clonar el marcador</p>
-<p><b>Guarda</b> y <b>Comparte</b> una URL del plano de la banda</p>
-</div>
-</div>
-</div>
-</div>
+      </select><select id="mapType" class="form-control" style="display:none"></select><!--AÑADIR CUANDO SE HAGA PARA PODER GUARDAR  input id="mapName" class="form-control" type="text" placeholder="Nombre del plano" maxlength="64" value=""--><label id="mapName"></label>
+    </div>
+    <div class="menu">
+      <button id="resetBtn" class="btn btn-secondary">Limpiar</button>
+      <label id="saveBtn"></label>
+      <!-- AÑADIR CUANDO SE HAGA PARA PODER GUARDAR  <button id="saveBtn" class="btn btn-primary disabled">Guardar Cambios</button>  -->
+    </div>
+  </div>
+  <div class="section thin">
+    <div class="section-body evenpad">
+      <div class="map-container">
+        <div id="map" class="map" oncontextmenu="return false"></div>
+        <div id="mapStatus" class="map-status">0 Jugadores</div>
+        <div id="mapHelper">
+          <p><b>Arrastrar Y Colocar</b> marcadores en el mapa</p>
+          <p><b>Haz Doble Click</b> en los marcadores para ver más opciones</p>
+          <p><b>Haz Click en el Botón Derecho</b> para borrar el marcador</p>
+          <p><b>Control Y Click Derecho</b> para clonar el marcador</p>
+          <p><b>Guarda</b> y <b>Comparte</b> una URL del plano de la banda</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- AÑADIR CUANDO SE HAGA PARA PODER GUARDAR
 <div class="section thin">
 <div class="section-head">Notas</div>
 <div class="section-body thin nopad">
 <textarea id="mapNotes" class="notes" placeholder="Escribe tus notas aqui..." maxlength="16000"></textarea>
+</div>  
 </div>
-</div>
+-->
+<label class="section thin"></label>
+<label class="section-head"></label>
+<label class="section-body thin nopad"></label>
+<label id="mapNotes"></label>
 </div>
 </div>
 </div>
 <div id="sPop" class="item-edit">
-<div class="selections">
-<img class="sel" draggable="false"><img class="sel" draggable="false"><img class="sel" draggable="false"><img class="sel" draggable="false"><img class="sel" draggable="false">
-</div>
-<div class="slabel is-small">
-<div class="input-pre">
-<textarea maxlength="128" placeholder="Introduce Texto"></textarea>
-</div>
-<div class="hint">Shift + Enter para escribir una nueva linea</div>
-</div>
-<div class="ssize">
-<div class="input-pre">
-<select>
-<option value="thin">Delgado</option>
-<option value="regular">Normal</option>
-<option value="thick">Grueso</option>
-<option value="chonky">Muy Grueso</option>
-</select>
-</div>
-</div>
-<div class="scolor">
-<div class="input-pre">
-<select>
-<optgroup label="Colores Basicos">
-<option value="#ffffff">Blanco</option>
-<option value="#ff0000">Rojo</option>
-<option value="#0000ff">Azul</option>
-<option value="#00ff00">Verde</option>
-<option value="#ff00ff">Magenta</option>
-<option value="#ffff00">Amarillo</option>
-<option value="#00ffff">Cian</option>
-<option value="#FFA500">Naranja</option>
-<option value="#999999">Gris</option>
-<option value="#000000">Negro</option>
-</optgroup>
-<optgroup label="Colores De Clases">
-<option value="#C41F3B">Caballero de la Muerte</option>
-<!--option value="#A330C9">Cazador de Demonios</option-->
-<option value="#FF7D0A">Druida</option>
-<option value="#ABD473">Cazador</option>
-<option value="#40C7EB">Mago</option>
-<!--option value="#00FF96">Monje</option-->
-<option value="#F58CBA">Paladin</option>
-<option value="#FFFFFF">Sacerdote</option>
-<option value="#FFF569">Picaro</option>
-<option value="#0070DE">Chaman</option>
-<option value="#8787ED">Brujo</option>
-<option value="#C79C6E">Guerrero</option>
-</optgroup>
-</select>
-</div>
-</div>
-<div class="sopacity">
-<div class="input-pre">
-<input type="number" min="1" max="100" value="100">
-</div>
-</div>
+  <div class="selections">
+    <img class="sel" draggable="false"><img class="sel" draggable="false"><img class="sel" draggable="false"><img class="sel" draggable="false"><img class="sel" draggable="false">
+  </div>
+  <div class="slabel is-small">
+    <div class="input-pre">
+      <textarea maxlength="128" placeholder="Introduce Texto"></textarea>
+    </div>
+    <div class="hint">Shift + Enter para escribir una nueva linea</div>
+  </div>
+  <div class="ssize">
+    <div class="input-pre">
+      <select>
+        <option value="thin">Delgado</option>
+        <option value="regular">Normal</option>
+        <option value="thick">Grueso</option>
+        <option value="chonky">Muy Grueso</option>
+      </select>
+    </div>
+  </div>
+  <div class="scolor">
+    <div class="input-pre">
+      <select>
+        <optgroup label="Colores Basicos">
+          <option value="#ffffff">Blanco</option>
+          <option value="#ff0000">Rojo</option>
+          <option value="#0000ff">Azul</option>
+          <option value="#00ff00">Verde</option>
+          <option value="#ff00ff">Magenta</option>
+          <option value="#ffff00">Amarillo</option>
+          <option value="#00ffff">Cian</option>
+          <option value="#FFA500">Naranja</option>
+          <option value="#999999">Gris</option>
+          <option value="#000000">Negro</option>
+        </optgroup>
+        <optgroup label="Colores De Clases">
+          <option value="#C41F3B">Caballero de la Muerte</option>
+          <!--option value="#A330C9">Cazador de Demonios</option-->
+          <option value="#FF7D0A">Druida</option>
+          <option value="#ABD473">Cazador</option>
+          <option value="#40C7EB">Mago</option>
+          <!--option value="#00FF96">Monje</option-->
+          <option value="#F58CBA">Paladin</option>
+          <option value="#FFFFFF">Sacerdote</option>
+          <option value="#FFF569">Picaro</option>
+          <option value="#0070DE">Chaman</option>
+          <option value="#8787ED">Brujo</option>
+          <option value="#C79C6E">Guerrero</option>
+        </optgroup>
+      </select>
+    </div>
+  </div>
+  <div class="sopacity">
+    <div class="input-pre">
+      <input type="number" min="1" max="100" value="100">
+    </div>
+  </div>
 </div>
 <script>
   window._mapNodes = null;
@@ -249,8 +267,8 @@
   };
 </script>
 <footer>
-<p>&copy; 2021 RaidPlan.io | <a href="https://www.patreon.com/raidplan" target="_blank">Patreon</a> | <a href="https://raidplan.io/about">About</a></p>
-<p>Need help or have a question?<br><a href="https://discord.gg/mTuHsfb" target="_blank">Join our Discord</a></p>
+  <p>&copy; 2021 VendettaWoW.com | <a href="https://www.vendettawow.com/" target="_blank">Vendetta WoW</a></p>
+  <p>¿Necesitas ayuda?<br><a href="https://discord.gg/9bdN5tk" target="_blank">Entra a nuestro Discord</a></p>
 </footer>
 <script src="assets/scripts/vendor.4847700234e5679ca6c8.js"></script>
 <script src="assets/scripts/app.076e20cb7e15260acd54.js"></script>
