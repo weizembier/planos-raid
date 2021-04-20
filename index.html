@@ -7,10 +7,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="mask-icon" href="https://raidplan.io/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="assets/styles/vendor.21e2102276cad6ac6b8b.css">
 <link rel="stylesheet" type="text/css" href="assets/styles/styles.f630c16512306c614cbe.css">
 <script>
@@ -24,7 +24,7 @@
 <header>
 <nav id="rpnav" class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container container-big">
-<a class="navbar-brand" href="https://raidplan.io/">RaidPlan<span>.io</span></a>
+<a class="navbar-brand" href="https://www.vendettawow.com/"><img src="assets/img/other/logo.png"><span></span></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -97,7 +97,7 @@
       DATA-RAID EL NOMBRE DE LA RAID
       DATA-BOSS EL NOMBRE DEL BOSS
       DATA-TIP EL NOMBRE DEL BOSS PARA MOSTRAR AL USUARIO -->
-<img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/gateway.png" data-special="*" data-raid="*" data-boss="*" data-tip="Portal">
+<!--img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/gateway.png" data-special="*" data-raid="*" data-boss="*" data-tip="Portal"-->
 <img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/lath_boss.png" data-special="lath_boss" data-raid="panteon" data-boss="lath" data-tip="Lath">
 <img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/archaedas_boss.png" data-special="archaedas_boss" data-raid="panteon" data-boss="archaedas" data-tip="Archaedas">
 <img class="item item-border item-pad item-special" draggable="true" src="assets/img/icons/special/helya_boss.png" data-special="helya_boss" data-raid="panteon" data-boss="helya" data-tip="Helya">
@@ -110,6 +110,8 @@
 <div class="section-head">Compartir</div>
 <div class="section-body">
 <div class="sb-card">
+  <!-- AÑADIR CUANDO SE HAGA PARA PODER GUARDAR
+
 <div class="sb-heading"><i class="fas fa-link"></i> Compartir URL</div>
 <div class="sb-body">
 <div class="input-group">
@@ -133,6 +135,8 @@
 </div>
 <div class="strat-actions text-center">
 <button id="btnClone" class="btn btn-secondary btn-block"><i class="fas fa-copy"></i>&nbsp;&nbsp;Clonar mapa</button>
+
+    -->
 <button id="btnDownload" class="btn btn-secondary btn-block"><i class="fas fa-download"></i>&nbsp;&nbsp;Descargar Imagen</button>
 </div> </div>
 </div>
@@ -156,7 +160,8 @@
 </div>
 <div class="menu">
 <button id="resetBtn" class="btn btn-secondary">Limpiar</button>
-<button id="saveBtn" class="btn btn-primary disabled">Guardar Cambios</button>
+<label id="saveBtn"></label>
+<!-- AÑADIR CUANDO SE HAGA PARA PODER GUARDAR  <button id="saveBtn" class="btn btn-primary disabled">Guardar Cambios</button>  -->
 </div>
 </div>
 <div class="section thin">
@@ -175,9 +180,11 @@
 </div>
 </div>
 <div class="section thin">
+   <!-- AÑADIR CUANDO SE HAGA PARA PODER GUARDAR
 <div class="section-head">Notas</div>
 <div class="section-body thin nopad">
 <textarea id="mapNotes" class="notes" placeholder="Escribe tus notas aqui..." maxlength="16000"></textarea>
+    -->
 </div>
 </div>
 </div>
@@ -249,8 +256,8 @@
   };
 </script>
 <footer>
-<p>&copy; 2021 RaidPlan.io | <a href="https://www.patreon.com/raidplan" target="_blank">Patreon</a> | <a href="https://raidplan.io/about">About</a></p>
-<p>Need help or have a question?<br><a href="https://discord.gg/mTuHsfb" target="_blank">Join our Discord</a></p>
+<p>&copy; 2021 VendettaWoW.com | <a href="https://www.vendettawow.com/" target="_blank">Vendetta WoW</a></p>
+<p>¿Necesitas ayuda?<br><a href="https://discord.gg/9bdN5tk" target="_blank">Entra a nuestro Discord</a></p>
 </footer>
 <script src="assets/scripts/vendor.4847700234e5679ca6c8.js"></script>
 <script src="assets/scripts/app.076e20cb7e15260acd54.js"></script>
