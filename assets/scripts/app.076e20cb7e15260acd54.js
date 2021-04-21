@@ -1930,7 +1930,7 @@
             var t = new r(e, "mark", "mark/".concat(e, ".png"));
             d.push(t)
         })), ["tank", "healer", "mdps", "rdps"].forEach((function(e) {
-            var t = new r(e, "role", "role/".concat(e, ".png"), "*");
+            var t = new r(e, "role", "role/".concat(e, ".svg"), "*");
             d.push(t)
         })), c.a.forEach((function(e) {
             var t = new r(e.id, "special", "special/".concat(e.id, ".png"), {
