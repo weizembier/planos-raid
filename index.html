@@ -1,3 +1,6 @@
+<!-- LOS ELEMENTOS QUE NO USAMOS ESTAN OCULTOS CON LA ETIQUETA "hidden", SE QUITARA CUANDO
+     SE HABILITE EL GUARDADO DE DATOS EN SERVIDOR -->
+
 <html>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -56,10 +59,10 @@
                 </div>
                 <div class="tb-section">Roles</div>
                 <div class="tb-items">
-                  <img class="item role-border" draggable="true" src="assets/img/icons/role/tank.png" data-asset="tank">
-                  <img class="item role-border" draggable="true" src="assets/img/icons/role/healer.png" data-asset="healer">
-                  <img class="item role-border" draggable="true" src="assets/img/icons/role/mdps.png" data-asset="mdps">
-                  <img class="item role-border" draggable="true" src="assets/img/icons/role/rdps.png" data-asset="rdps">
+                  <img class="item role-border" draggable="true" src="assets/img/icons/role/tank.svg" data-asset="tank">
+                  <img class="item role-border" draggable="true" src="assets/img/icons/role/healer.svg" data-asset="healer">
+                  <img class="item role-border" draggable="true" src="assets/img/icons/role/mdps.svg" data-asset="mdps">
+                  <img class="item role-border" draggable="true" src="assets/img/icons/role/rdps.svg" data-asset="rdps">
                 </div>
                 <div class="tb-section">Clases</div>
                 <div class="tb-items">
@@ -109,7 +112,7 @@
 <div class="section thin">
   <div class="section-head">Compartir</div>
   <div class="section-body">
-    <div class="sb-card">
+    <div hidden class="sb-card">
       <div class="sb-heading"><i class="fas fa-link"></i> Compartir URL</div>
       <div class="sb-body">
         <div class="input-group">
@@ -122,7 +125,7 @@
     </div>
 
 
-    <div class="sb-card">
+    <div hidden class="sb-card">
       <div class="sb-heading"><i class="fas fa-edit"></i> Edita URL</div>
       <div class="sb-body">
         <div class="input-group">
@@ -135,7 +138,7 @@
     </div>
 
     <div class="strat-actions text-center">
-      <button id="btnClone" class="btn btn-secondary btn-block"><i class="fas fa-copy"></i>&nbsp;&nbsp;Clonar mapa</button-->
+      <button hidden id="btnClone" class="btn btn-secondary btn-block"><i class="fas fa-copy"></i>&nbsp;&nbsp;Clonar mapa</button-->
       <button id="btnDownload" class="btn btn-secondary btn-block"><i class="fas fa-download"></i>&nbsp;&nbsp;Descargar Imagen</button>
       </div> </div>
     </div>
@@ -155,11 +158,11 @@
           <option value="panteon_helya">Helya</option>
         </optgroup>
 
-      </select><select id="mapType" class="form-control" style="display:none"></select><input id="mapName" class="form-control" type="text" placeholder="Nombre del plano" maxlength="64" value="">
+      </select><select id="mapType" class="form-control" style="display:none"></select><input hidden id="mapName" class="form-control" type="text" placeholder="Nombre del plano" maxlength="64" value="">
     </div>
     <div class="menu">
       <button id="resetBtn" class="btn btn-secondary">Limpiar</button>
-      <button id="saveBtn" class="btn btn-primary disabled">Guardar Cambios</button> 
+      <button hidden id="saveBtn" class="btn btn-primary disabled">Guardar Cambios</button> 
     </div>
   </div>
   <div class="section thin">
@@ -179,9 +182,9 @@
   </div>
  
 <div class="section thin">
-<div class="section-head">Notas</div>
+<div hidden class="section-head">Notas</div>
 <div class="section-body thin nopad">
-<textarea id="mapNotes" class="notes" placeholder="Escribe tus notas aqui..." maxlength="16000"></textarea>
+<textarea hidden id="mapNotes" class="notes" placeholder="Escribe tus notas aqui..." maxlength="16000"></textarea>
 </div>  
 </div>
 
